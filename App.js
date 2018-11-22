@@ -49,13 +49,13 @@ const styles = StyleSheet.create({
 */
 
 import React, { Component } from 'react';
+
 import SalmonCamera from './src/components/SalmonCamera.js';
 import SalmonCameraRoll from './src/components/SalmonCameraRoll.js';
+import { MainNavigator } from './config/router.js';
 
 export default class App extends Component {
   render() {
-    return (
-      <SalmonCameraRoll />
-    );
+    return <MainNavigator />;
   }
 }

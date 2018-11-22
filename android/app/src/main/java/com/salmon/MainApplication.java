@@ -6,6 +6,8 @@ import com.facebook.react.ReactApplication;
 import cl.json.RNSharePackage;
 import com.RNFetchBlob.RNFetchBlobPackage;
 import org.reactnative.camera.RNCameraPackage;
+import com.reactnative.ivpusic.imagepicker.PickerPackage;
+import com.dylanvann.fastimage.FastImageViewPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -28,7 +30,9 @@ public class MainApplication extends Application implements ReactApplication {
           new MainReactPackage(),
             new RNSharePackage(),
             new RNFetchBlobPackage(),
-            new RNCameraPackage()
+            new RNCameraPackage(),
+            new PickerPackage(),
+            new FastImageViewPackage()
       );
     }
 
